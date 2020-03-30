@@ -1,0 +1,17 @@
+/* pages/components/user/user-pic.wxss */
+.user-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+	width: 200rpx;
+}
+.user-section .care-img {
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 50%;
+}
+.user-section .care-num {
+  margin-top: 10rpx;
+	font-size: 35rpx;
+	color: orange;
+}

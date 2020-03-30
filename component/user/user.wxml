@@ -1,0 +1,6 @@
+<!--pages/components/user/user-pic.wxml-->
+<view class="user-section">
+	<image class="care-img" src="{{userImg}}"></image>
+	<text class="care-num">关注量：{{careNum}}</text>
+  <text class="care-num">昵称：{{userName}}</text>
+</view>

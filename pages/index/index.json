@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "user-pic": "../../component/user/user",
+    "auth": "../../component/auth/auth"
+  }
+}
