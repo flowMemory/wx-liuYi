@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 兄弟组件的通信 -->
+  <auth
+    wx:if="{{!hasUserInfo}}"
+    bind:bindAuthEvent="onGetUserInfo"
+  ></auth>
+  <user-pic care-num="5" user-img="{{userInfo.avatarUrl}}"></user-pic>   
+</view>
