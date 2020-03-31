@@ -1,0 +1,13 @@
+<!--pages/switch/switch.wxml-->
+<!-- 动画的实现和布局相关 -->
+<view class="switch-container">
+	<view class="switch-tab-wrapper" bindtap="switchCons">
+		<view class="tab-left" data-item="left">tab-left</view>
+		<view class="tab-right" data-item="right">tab-right</view>
+	</view>
+	<view class="{{activeItem == 'left'?'cons-wrapper move-left':'cons-wrapper move-right'}}">
+		<view class="cons-wrapper-left">cons-wrapper-left</view>
+		<view class="cons-wrapper-right" data-item="right">cons-wrapper-right</view>
+	</view>
+	<view class="ani-container" id="container"></view>
+</view>
