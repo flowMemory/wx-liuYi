@@ -3,10 +3,10 @@ import config from '../config/config.js'
 class HTTP {
     request({url, data={}, method='GET'}) {
 		return Promise((resolve, reject) => {
-			this._request(url, data, resolve, reject, data, method)
+			this._request(url, data, resolve, reject, method)
 		})
 	}
-	_request(url, data, resolve, reject, data={}, method='GET') {
+	_request(url, data, resolve, reject, method='GET') {
 		wx.request({
 			url: congfig.base_url + url,
 			method: method,

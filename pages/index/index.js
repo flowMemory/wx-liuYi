@@ -6,7 +6,7 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+		region: ['广东省', '广州市', '海珠区'],
   },
   //事件处理函数
   bindViewTap: function() {
@@ -43,6 +43,12 @@ Page({
       // 延迟的消失的时间
       duration: 15000
     })
-  }
+  },
+	bindRegionChange: function (e) {
+		console.log('picker发送选择改变，携带值为', e.detail.value)
+		this.setData({
+			region: e.detail.value
+		})
+	}
 
 })
