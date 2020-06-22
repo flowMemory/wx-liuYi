@@ -7,6 +7,39 @@ Page({
     userInfo: {},
     hasUserInfo: false,
 		region: ['广东省', '广州市', '海珠区'],
+		
+		// map data
+		markers: [{
+			iconPath: "/image/location.png",
+			id: 0,
+			latitude: 23.099994,
+			longitude: 113.324520,
+			width: 50,
+			height: 50
+		}],
+		polyline: [{
+			points: [{
+				longitude: 113.3245211,
+				latitude: 23.10229
+			}, {
+				longitude: 113.324520,
+				latitude: 23.21229
+			}],
+			color: "#FF0000DD",
+			width: 2,
+			dottedLine: true
+		}],
+		controls: [{
+			id: 1,
+			iconPath: '/image/location.png',
+			position: {
+				left: 0,
+				top: 300 - 50,
+				width: 50,
+				height: 50
+			},
+			clickable: true
+		}] 
   },
   //事件处理函数
   bindViewTap: function() {
@@ -49,6 +82,20 @@ Page({
 		this.setData({
 			region: e.detail.value
 		})
+	},
+
+	// 地图组件方法
+	// 点击控件
+	controltap(evt) {
+		console.log(evt)
+	},
+	// 点击标记
+	markertap(evt) {
+		console.log(evt)
+	},
+	// 视野改变
+	regionchange(evt) {
+		console.log(evt)
 	}
 
 })
