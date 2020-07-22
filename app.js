@@ -9,7 +9,25 @@ App({
     // 登录
     wx.login({
       success: res => {
+        console.log(res)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        wx.request({
+          url: 'http://localhost:3000/v1/token',
+          method: "post",
+          data: {
+            account: res.code,
+            type: 100
+          },
+          success: function(res) {
+            console.log(res)
+          },
+          fail: function(error) {
+            console.log(error)
+          }
+        })
+      },
+      fail: function (error) {
+        console.log(error)
       }
     })
     // 获取用户信息
