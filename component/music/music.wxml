@@ -1,0 +1,2 @@
+<!--component/music/music.wxml-->
+<view class="music-btn">{{playStateText}}</view>

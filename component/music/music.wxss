@@ -1,0 +1,10 @@
+/* component/music/music.wxss */
+.music-btn {
+	width: 100rpx;
+	height: 100rpx;
+	line-height: 100rpx;
+	background: #ffffff;
+	border: 2px solid #999999;
+	color: orange;
+	text-align: center;
+}
