@@ -1,4 +1,6 @@
-// pages/node-koa-interface/interface.js
+const app = getApp();
+import { CouponDetailServerModel } from 'coupon-detail-server.js';
+const couponDetailServerModel = new CouponDetailServerModel();
 Page({
 
   /**
