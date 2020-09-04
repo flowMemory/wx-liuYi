@@ -1,6 +1,6 @@
 const app = getApp();
-import { CouponDetailServerModel } from 'coupon-detail-server.js';
-const couponDetailServerModel = new CouponDetailServerModel();
+// import { CouponDetailServerModel } from 'coupon-detail-server.js';
+// const couponDetailServerModel = new CouponDetailServerModel();
 Page({
 
   /**
